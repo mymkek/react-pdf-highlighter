@@ -8,9 +8,13 @@ import pdfjsWorker from "pdfjs-dist/build/pdf.worker.entry";
 
 
 class PdfLoader extends Component {
-    state = {
-        pdfDocument: null
-    };
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            pdfDocument: null
+        };
+    }
 
     componentDidMount() {
         this.load();
