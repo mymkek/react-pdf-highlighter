@@ -56,7 +56,7 @@ class Tip extends Component {
       }
     }, React.createElement("div", null, React.createElement("textarea", {
       width: "100%",
-      placeholder: "Your comment",
+      placeholder: "Текст заметки",
       autoFocus: true,
       value: text,
       onChange: event => this.setState({
@@ -67,7 +67,7 @@ class Tip extends Component {
           node.focus();
         }
       }
-    }), React.createElement("div", null, ["💩", "😱", "😍", "🔥", "😳", "⚠️"].map(_emoji => React.createElement("label", {
+    }), React.createElement("div", null, ["▲", "?", "✔", "🔥", "✖", "⚠"].map(_emoji => React.createElement("label", {
       key: _emoji
     }, React.createElement("input", {
       checked: emoji === _emoji,
@@ -79,7 +79,7 @@ class Tip extends Component {
       })
     }), _emoji)))), React.createElement("div", null, React.createElement("input", {
       type: "submit",
-      value: "Save"
+      value: "Сохранить"
     }))));
   }
 
