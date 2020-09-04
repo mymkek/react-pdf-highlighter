@@ -71,7 +71,7 @@ class Tip extends Component<Props, State> {
               />
               <div>
                 {["▲", "?", "✔", "🔥", "✖", "⚠"].map(_emoji => (
-                  <label key={_emoji}>
+                  <label key={_emoji} className="Tip__emojiInput">
                     <input
                       checked={emoji === _emoji}
                       type="radio"
@@ -86,7 +86,7 @@ class Tip extends Component<Props, State> {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="Tip__buttonContainer">
               <input type="submit" value="Сохранить" />
             </div>
           </form>

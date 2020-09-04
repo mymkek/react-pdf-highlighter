@@ -18,11 +18,25 @@
 
 .Tip__card textarea {
   font-size: 16px;
-  width: 200px;
+  width: 100%;
   height: 70px;
 }
 
 .Tip__card input[type="submit"] {
   margin-top: 5px;
   font-size: large;
+}
+
+.Tip__emojiInput {
+    padding: 5px;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.2);
+}
+
+.Tip__emojiInput input{
+    margin-right: 5px;
+}
+
+.Tip__buttonContainer {
+    display: flex;
+    justify-content: flex-end;
 }
