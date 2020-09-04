@@ -45,7 +45,7 @@ class Tip extends Component {
           compact: false
         });
       }
-    }, "Add highlight") : React.createElement("form", {
+    }, "Добавить заметку") : React.createElement("form", {
       className: "Tip__card",
       onSubmit: event => {
         event.preventDefault();
